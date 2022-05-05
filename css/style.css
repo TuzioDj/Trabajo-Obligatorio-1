@@ -7,6 +7,7 @@
 body {
     background-color: rgb(22, 22, 22);
     font-family: 'Poppins', sans-serif;
+    color: white;
 }
 .navbarStyle{
     background-color: rgb(36, 36, 36);
@@ -27,8 +28,31 @@ body {
 #gpuIcon{
     width: 40px;
 }
-.bodyStyle{
+.verticalBodyStyle{
     display:flex;
-    padding: 0 20%; 
-
+    flex-wrap: wrap;
+    padding: 2% 20%;
+}
+.verticalBodyImages{
+    width: 50%;
+    padding: 2%;
+}
+.verticalBodyText{
+    width: 50%;
+    padding: 4%;
+}
+.horizontalBodyStyle{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding:2% 10%;
+}
+.horizontalBodyElement{
+    width: 30%;
+    padding: 3%;
+}
+.horizontalBodyImages{
+    width: 100%;
+}
+.horizontalBodyText{
 }
