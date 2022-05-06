@@ -32,24 +32,27 @@ img{
 }
 .textCenter{
     text-align: center;
+    justify-content: center;
 }
 .flexImages{
     display:flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 0% 20%;
+    padding: 0% 18%;
 }
 .flexElements{
     width: 50%;
-    padding: 2%;
+    padding: 3%;
 }
 .flexText{
-}
-.bodyTitle{
-    justify-content: center;
+    padding:5%;
 }
 .threeItems{
     width: 33%;
+    padding: 1%;
+}
+.bodyTitle{
+    padding: 2%;
 }
 .cover{
     display:flex;
@@ -57,4 +60,6 @@ img{
 }
 footer{
     background-color:rgb(36, 36, 36);
+    padding: 2%;
+    margin-top: 2%;
 }
