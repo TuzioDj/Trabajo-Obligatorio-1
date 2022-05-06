@@ -10,8 +10,6 @@ body {
     background-color: rgb(22, 22, 22);
 }
 header{
-    position: fixed;
-    width: 100%;
     background-color: rgb(36, 36, 36);
     display: flex;
     justify-content: space-between;
@@ -33,28 +31,31 @@ img{
     width: 40px;
 }
 .textCenter{
-    padding: 2%;
     text-align: center;
 }
 .flexImages{
     display:flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 5% 20%;
+    padding: 0% 20%;
 }
 .flexElements{
     width: 50%;
     padding: 2%;
 }
 .flexText{
-    padding: 4%;
-}
+    
 .bodyTitle{
     justify-content: center;
 }
 .threeItems{
     width: 33%;
 }
+.cover{
+    display:flex;
+    justify-content: center;
+    padding-top: 5%;
+}
 footer{
-    background-color:rgb(36, 36, 36)
+    background-color:rgb(36, 36, 36);
 }
