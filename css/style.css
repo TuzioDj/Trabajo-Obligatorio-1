@@ -44,7 +44,7 @@ img{
     padding: 2%;
 }
 .flexText{
-    
+}
 .bodyTitle{
     justify-content: center;
 }
@@ -54,7 +54,6 @@ img{
 .cover{
     display:flex;
     justify-content: center;
-    padding-top: 5%;
 }
 footer{
     background-color:rgb(36, 36, 36);
