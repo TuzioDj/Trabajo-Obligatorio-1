@@ -73,8 +73,52 @@ table{
     justify-content: space-around;
     list-style-position: inside;
 }
+.pcForm{
+    width: 20%;
 
+}
+.pcForm input{
+    width: 90%;
+    margin: 3%;
+    padding: 3%;
+    background-color: rgb(36, 36, 36);
+    border: 3px solid rgb(150, 0, 150);
+    border-radius: 15px;
+}
+.pcForm input::placeholder{
+    color: rgb(185, 185, 185);
+}
+.pcForm .formButton{
+    width: 30%;
+    margin-top: 8%;
+    cursor: pointer;
+}
+.captcha h4{
+    margin: 5%;
+}
+div .bodyTitle{
+    margin: 3%;
+}
+.captcha{
+    position: relative;
+}
+#captchaText{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    font-size: 2.5rem;
+    text-align: center;
+    letter-spacing: 30px;
+    user-select: none;
+}
+#captchaVerification{
+    display: none;
+    margin: 3%;
+}
 footer{
+    bottom: 0px;
     background-color:rgb(36, 36, 36);
     padding: 2%;
     margin-top: 2%;

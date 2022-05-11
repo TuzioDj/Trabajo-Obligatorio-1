@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tu PC - TP Especial 2022</title>
+    <link rel="shortcut icon" href="../images/GPU Icon.svg">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -24,14 +25,38 @@
             <a class="navbarFont" href="yourPc.html">Tu PC</a>
         </div>      
     </header>
+
+    <!-- Formulario -->
+
+    <h1 class="bodyTitle itemCenter">¿Cuál es tu PC con el que disfrutás todos los días?</h1>
+    
+    <form class="itemCenter pcForm">
+        <div>
+            <input id="CPU" type="text" value="" placeholder="Escribe el modelo de tu CPU aquí" required>
+            <input id="Mother" type="text" value="" placeholder="Escribe el modelo de tu motherboard aquí" required>
+            <input id="GPU" type="text" value="" placeholder="Escribe el modelo de tu GPU aquí" required>
+            <input id="PowerSupply" type="text" value="" placeholder="Escribe el modelo de tu fuente aquí" required>
+        </div>
+        <div>
+            <h4 class="bodyTitle">Captcha</h4>
+            <div class="captcha">
+                <img src="../images/Captcha background.jpg" alt="Captcha">
+                <p id="captchaText"></p>
+            </div>
+                <input id="captchaInsert" type="text" value="" placeholder="¿Qué dice el captcha?">
+                <p id="captchaVerification"></p>
+        </div>
+        <input type="submit" value="Enviar" class="formButton" required>
+    </form>
     
     <!-- Pie de página -->
 
     <footer>
         <p class="itemCenter">
-            El trabajo fue desarrollado por Esteban Orellano y Gonzalo Lucio <br>
+            El trabajo fue desarrollado por Esteban Orellano y Gonzalo Lucio
         </p>
     </footer>
 
+    <script src="../javascript/script.js"></script>
 </body>
 </html>
