@@ -118,6 +118,8 @@ div .bodyTitle{
     margin: 3%;
 }
 footer{
+    position: absolute;
+    width: 100%;
     bottom: 0px;
     background-color:rgb(36, 36, 36);
     padding: 2%;
