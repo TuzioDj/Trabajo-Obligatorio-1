@@ -2,6 +2,10 @@ let captchaCode = document.querySelector("#captchaText"),
 captchaInsert = document.querySelector("#captchaInsert"),
 captchaBtn = document.querySelector (".formButton"),
 captchaVerificated = document.querySelector("#captchaVerification");
+cpuInsert = document.querySelector("#CPU")
+motherInsert = document.querySelector("#Mother")
+gpuInsert = document.querySelector("#GPU")
+powersupplyInsert = document.querySelector("#PowerSupply")
 
 let characteres =  ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O',
                     'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'a', 'b', 'c', 'd',
@@ -17,7 +21,23 @@ captchaBtn.addEventListener("click", e=>{
     e.preventDefault()
     captchaVerificated.style.display = "block";
     let captchaInserted = captchaInsert.value;
-    if(captchaInserted == captchaCode.textContent){
+    if (cpuInsert.value == "") {
+        captchaVerificated.style.color = "rgb(255, 0, 0)";
+        captchaVerificated.textContent = "Primero llená el campo del CPU"
+    }
+    else if (motherInsert.value == "") {
+        captchaVerificated.style.color = "rgb(255, 0, 0)";
+        captchaVerificated.textContent = "Primero llená el campo de la Motherboard"
+    }
+    else if (gpuInsert.value == "") {
+        captchaVerificated.style.color = "rgb(255, 0, 0)";
+        captchaVerificated.textContent = "Primero llená el campo de la GPU"
+    }
+    else if (powersupplyInsert.value == "") {
+        captchaVerificated.style.color = "rgb(255, 0, 0)";
+        captchaVerificated.textContent = "Primero llená el campo de la Fuente de poder"
+    }
+    else if(captchaInserted == captchaCode.textContent){
         captchaVerificated.style.color = "rgb(0, 255, 0)";
         captchaVerificated.textContent = "Felicidades!, no sos un robot :D"
     }
