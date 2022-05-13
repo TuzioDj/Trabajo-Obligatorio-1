@@ -15,8 +15,8 @@ function newCaptcha(){
 }
 captchaBtn.addEventListener("click", e=>{
     e.preventDefault()
-    let captchaInserted = captchaInsert.value;
     captchaVerificated.style.display = "block";
+    let captchaInserted = captchaInsert.value;
     if(captchaInserted == captchaCode.textContent){
         captchaVerificated.style.color = "rgb(0, 255, 0)";
         captchaVerificated.textContent = "Felicidades!, no sos un robot :D"

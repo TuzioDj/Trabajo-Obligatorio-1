@@ -12,41 +12,53 @@
     <!-- Barra de navegación -->
 
     <header> 
-        <div id="gpuIcon">
+        <div id="navbarIcon">
             <a href="index.html"><img src="../images/GPU Icon.svg" alt="GPU Icon"></a>
         </div>
-        <div id="navbarButtons">
-            <a class="navbarFont" href="index.html">Inicio</a>
-            <a class="navbarFont" href="nvidia.html">Nvidia</a>
-            <a class="navbarFont" href="amd.html">AMD</a>
-            <a class="navbarFont" href="intel.html">Intel</a>
+        <div>
+            <a href="index.html">Inicio</a>
+            <a href="nvidia.html">Nvidia</a>
+            <a href="amd.html">AMD</a>
+            <a href="intel.html">Intel</a>
         </div>
         <div>
-            <a class="navbarFont" href="yourPc.html">Tu PC</a>
+            <a href="yourPc.html">Tu PC</a>
         </div>      
     </header>
 
     <!-- Formulario -->
 
-    <h1 class="bodyTitle itemCenter">¿Cuál es tu PC con el que disfrutás todos los días?</h1>
+    <div class="bodyTitlePadding itemCenter">
+        <h1>¿Cuál es tu PC con el que disfrutás todos los días?</h1>
+    </div>
     
     <form class="itemCenter pcForm">
         <div>
-            <input id="CPU" type="text" value="" placeholder="Escribe el modelo de tu CPU aquí" required>
-            <input id="Mother" type="text" value="" placeholder="Escribe el modelo de tu motherboard aquí" required>
-            <input id="GPU" type="text" value="" placeholder="Escribe el modelo de tu GPU aquí" required>
-            <input id="PowerSupply" type="text" value="" placeholder="Escribe el modelo de tu fuente aquí" required>
+            <input id="CPU" type="text" value="" placeholder="Escribe el modelo de tu CPU aquí">
+            <input id="Mother" type="text" value="" placeholder="Escribe el modelo de tu motherboard aquí">
+            <input id="GPU" type="text" value="" placeholder="Escribe el modelo de tu GPU aquí">
+            <input id="PowerSupply" type="text" value="" placeholder="Escribe el modelo de tu fuente aquí">
         </div>
+
         <div>
-            <h4 class="bodyTitle">Captcha</h4>
+            <div class="bodyTitlePadding">
+                <h4>Captcha</h4>
+            </div>
             <div class="captcha">
                 <img src="../images/Captcha background.jpg" alt="Captcha">
                 <p id="captchaText"></p>
             </div>
+            <div>
                 <input id="captchaInsert" type="text" value="" placeholder="¿Qué dice el captcha?">
+            </div>
+            <div>
                 <p id="captchaVerification"></p>
+            </div>
         </div>
-        <input type="submit" value="Enviar" class="formButton" required>
+
+        <div>
+            <input type="submit" value="Enviar" class="formButton">
+        </div>
     </form>
     
     <!-- Pie de página -->

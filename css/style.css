@@ -29,15 +29,15 @@ td{
 table{
     margin: 2% auto;
 }
-.navbarFont{
+header div a{
     text-decoration: none;
     padding: 0 15px;
     transition: 0.3s;
 }
-.navbarFont:hover {
+header div a:hover {
     color: rgb(255, 0, 255)
 }
-#gpuIcon{
+#navbarIcon{
     width: 40px;
 }
 .itemCenter{
@@ -50,18 +50,18 @@ table{
     justify-content: space-between;
     padding: 0% 18%;
 }
-.flexElements{
+.flexImages div{
     width: 50%;
     padding: 3%;
+}
+.flexImages .threeItems{
+    width: 33%;
+    padding: 1%;
 }
 .flexText{
     padding:2%;
 }
-.threeItems{
-    width: 33%;
-    padding: 1%;
-}
-.bodyTitle{
+.bodyTitlePadding{
     padding: 2%;
 }
 .cover{
@@ -96,7 +96,7 @@ table{
 .captcha h4{
     margin: 5%;
 }
-div .bodyTitle{
+form div .bodyTitlePadding{
     margin: 4%;
 }
 .captcha{
